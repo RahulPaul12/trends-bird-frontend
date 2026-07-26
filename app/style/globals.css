@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #856DF3;
+  --color-paragraph: #757575;
+}
+
+
+
+
+body {
+  font-family: var(--font-nunito);
+}
