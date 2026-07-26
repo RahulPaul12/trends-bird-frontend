@@ -14,21 +14,22 @@ const LoginPage = () => {
                 </div>
             </div>
             <div className="flex items-center justify-center p-5">
-                <div className="w-full">
+                <div className="w-full max-w-[400px]">
                     <div className="flex flex-col gap-2 items-center mb-8">
                         <Image className="w-10 h-10 mb-6" width={40} height={40} src={fabimage} alt="fabicon"/>
                         <h1 className="text-2xl font-bold">Welcome Back</h1>
                         <p className="text-sm font-normal text-paragraph">Log in to continue managing your logistics with ShipNow</p>
                     </div>
-                    <form className="max-w-[400px] w-full ">
-                        <div className="">
-                            <label htmlFor="email">Email address</label>
-                            <input type="email" placeholder="Enter your email address" />
+                    <form >
+                        <div className="mb-4">
+                            <label htmlFor="email" className="input-field-title">Email Address</label>
+                            <input className="input-field-control" type="email" placeholder="Enter your email address" />
                         </div>
-                        <div className="">
-                            <label htmlFor="password">Password</label>
-                            <input type="password" placeholder="Enter your password" />
+                        <div className="mb-8">
+                            <label htmlFor="password" className="input-field-title">Password</label>
+                            <input className="input-field-control" type="password" placeholder="Enter your password" />
                         </div>
+                        <button className="w-full h-11 text-base font-semibold bg-[#333333] text-[#FEFEFE] rounded-lg">Login</button>
                     </form>
                 </div>
 

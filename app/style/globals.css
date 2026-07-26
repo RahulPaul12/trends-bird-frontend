@@ -5,7 +5,13 @@
   --color-paragraph: #757575;
 }
 
+@layer base {
 
+    .input-field-control {@apply focus-within:border-primary border border-transparent h-[38px] rounded-lg bg-[#F5F5F5] outline-none px-3 py-2 w-full}
+    textarea.db-field-control {@apply h-16}
+    .input-field-title {@apply text-[11px] font-semibold mb-1.5}
+    .input-field-control::placeholder {@apply text-xs text-paragraph}
+}
 
 
 body {
