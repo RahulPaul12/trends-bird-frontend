@@ -36,14 +36,14 @@
     .db-sidebar-nav-menu span { @apply text-base flex-auto text-left tablet:hidden lg:block max-tablet:block}
 
 
-        /* BREADCRUMB */
+    /* BREADCRUMB */
     .db-breadcrumb { @apply flex flex-col flex-wrap gap-y-2 gap-x-5 items-center justify-center sm:flex-row sm:justify-between text-black}
     .db-breadcrumb-list { @apply flex flex-wrap items-center justify-center sm:justify-end }
     .db-breadcrumb-item { @apply capitalize text-[11px]}
     .db-breadcrumb-link { @apply transition hover:text-primary after:content-['/'] after:px-1.5 }
 
 
-        /* TABLE */
+    /* TABLE */
     .db-table-responsive { @apply w-full overflow-auto }
     .db-table { @apply table-auto w-full text-left whitespace-nowrap }
     .db-table.stripe .db-table-body-tr { @apply odd:!bg-[#f9fafb] }
