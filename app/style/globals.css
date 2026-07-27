@@ -9,6 +9,8 @@
 
 @layer base {
 
+    .db-card {@apply bg-white rounded-xl p-4}
+
     .input-field-control {@apply focus-within:border-primary border border-transparent h-[38px] rounded-lg bg-[#F5F5F5] outline-none px-3 py-2 w-full}
     textarea.db-field-control {@apply h-16}
     .input-field-title {@apply text-[11px] font-semibold mb-1.5}
@@ -33,9 +35,30 @@
     .db-sidebar-nav-menu i { @apply text-[22px] }
     .db-sidebar-nav-menu span { @apply text-base flex-auto text-left tablet:hidden lg:block max-tablet:block}
 
+
+        /* BREADCRUMB */
+    .db-breadcrumb { @apply flex flex-col flex-wrap gap-y-2 gap-x-5 items-center justify-center sm:flex-row sm:justify-between text-black}
+    .db-breadcrumb-list { @apply flex flex-wrap items-center justify-center sm:justify-end }
+    .db-breadcrumb-item { @apply capitalize text-[11px]}
+    .db-breadcrumb-link { @apply transition hover:text-primary after:content-['/'] after:px-1.5 }
+
+
+        /* TABLE */
+    .db-table-responsive { @apply w-full overflow-auto }
+    .db-table { @apply table-auto w-full text-left whitespace-nowrap }
+    .db-table.stripe .db-table-body-tr { @apply odd:!bg-[#f9fafb] }
+    .db-table-head { @apply ltr:text-left rtl:text-right border-b-2 border-t border-gray-200 }
+    .db-table-body { @apply ltr:text-left rtl:text-right }
+    .db-table-head-th { @apply px-4 py-3  tracking-[1px] font-medium text-xs uppercase text-[#566a7f] }
+    .db-table-body-tr { @apply border-b border-gray-200 last:border-none }
+    .db-table-body-td { @apply px-4 py-3 text-sm }
+
+    .db-footer {@apply flex flex-col md:flex-row gap-2 md:gap-8 justify-center md:justify-between lg:justify-normal items-center px-5 pb-5 bg-[#F0F0F0]}
+
   }
 
 
 body {
   font-family: var(--font-nunito);
+  color: black;
 }

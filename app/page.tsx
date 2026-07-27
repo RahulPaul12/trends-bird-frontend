@@ -20,7 +20,7 @@ const LoginPage = () => {
     }
     return (
         <div className="grid h-screen md:grid-cols-2 grid-flow-dense">
-            <div className="bg-primary flex justify-center items-center p-5 md:order-1 order-2">
+            <div className="bg-primary flex justify-center items-center p-5">
                 <div className="max-w-156.25">
                     <Image className=" h-auto" width={1000} height={500} src={loginCover} alt="login cover"/>
                     <div className="text-white text-center">
@@ -29,7 +29,7 @@ const LoginPage = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex items-center justify-center p-5 md:order-2 order-1">
+            <div className="flex items-center justify-center p-5">
                 <div className="w-full max-w-[400px]">
                     <div className="flex flex-col gap-2 items-center mb-8">
                         <Image className="w-10 h-10 mb-6" width={40} height={40} src={fabimage} alt="fabicon"/>

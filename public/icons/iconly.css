@@ -7,8 +7,8 @@
   font-family: "Iconly";
   font-style: normal;
   font-weight: 400;
-  src: url("./iconly.eot?1785137928894");
-  src: url("./iconly.eot?#iefix") format("embedded-opentype"), url("./iconly.woff2?1785137928894") format("woff2"), url("./iconly.woff?1785137928894") format("woff"), url("./iconly.ttf?1785137928894") format("truetype"), url("./iconly.svg?1785137928894#Iconly") format("svg");
+  src: url("./iconly.eot?1785153934416");
+  src: url("./iconly.eot?#iefix") format("embedded-opentype"), url("./iconly.woff2?1785153934416") format("woff2"), url("./iconly.woff?1785153934416") format("woff"), url("./iconly.ttf?1785153934416") format("truetype"), url("./iconly.svg?1785153934416#Iconly") format("svg");
 }
 
 [class="icon"], [class^="icon-"], [class*=" icon-"] {
@@ -65,4 +65,24 @@
 
 .icon-arrow-down:before {
   content: "\e00a";
+}
+
+.icon-facebook:before {
+  content: "\e00b";
+}
+
+.icon-x:before {
+  content: "\e00c";
+}
+
+.icon-instagram:before {
+  content: "\e00d";
+}
+
+.icon-youtube:before {
+  content: "\e00e";
+}
+
+.icon-linkedin:before {
+  content: "\e00f";
 }
