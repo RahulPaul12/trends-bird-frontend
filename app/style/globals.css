@@ -3,6 +3,8 @@
 @theme {
   --color-primary: #856DF3;
   --color-paragraph: #757575;
+  --breakpoint-mobile: 375px;
+  --breakpoint-tablet:768px;
 }
 
 @layer base {
@@ -11,7 +13,27 @@
     textarea.db-field-control {@apply h-16}
     .input-field-title {@apply text-[11px] font-semibold mb-1.5}
     .input-field-control::placeholder {@apply text-xs text-paragraph}
-}
+    .input-field-checkbox { @apply flex items-center pt-1 w-fit cursor-pointer }
+    .custom-checkbox { @apply relative w-4 h-4 cursor-pointer }
+    .custom-checkbox-field { @apply absolute z-10 opacity-0 w-full h-full appearance-none cursor-pointer }
+    .custom-checkbox-icon { @apply absolute top-0 left-0 w-full h-full text-center rounded leading-[14px] text-[10px] border cursor-pointer border-[#d9dee3] text-white }
+    .custom-checkbox-field:checked + .custom-checkbox-icon { @apply bg-primary border-primary}
+    .error-message {@apply text-xs text-red-500 mt-1}
+
+
+    .sidebar {@apply md:px-2 lg:px-4 px-4 py-5 shrink-0 max-w-[223px] h-dvh fixed top-0 left-0 z-30 bg-white max-tablet:-translate-x-full shadow-xs transition-transform duration-300}
+    .db-sidebar.active { @apply translate-x-0 lg:-translate-x-full lg:shadow-none }
+    .db-sidebar-header { @apply flex items-center justify-between mb-3 pb-3}
+
+    .db-sidebar-nav-item, .db-sidebar-nav-list {@apply w-full lg:w-full tablet:w-fit}
+    .db-sidebar-nav-item.active .db-sidebar-nav-menu { @apply text-primary bg-[#E3DDFF] }
+    .db-sidebar-nav-item.router-link-active .db-sidebar-nav-menu { @apply text-primary bg-[#E3DDFF] }
+    .db-sidebar-nav-menu.router-link-active { @apply text-primary bg-primary/5 }
+    .db-sidebar-nav-menu { @apply capitalize w-full lg:w-full tablet:w-fit flex items-center justify-start text-left rounded gap-3 py-2.5 px-3 transition hover:bg-gray-100 }
+    .db-sidebar-nav-menu i { @apply text-[22px] }
+    .db-sidebar-nav-menu span { @apply text-base flex-auto text-left tablet:hidden lg:block max-tablet:block}
+
+  }
 
 
 body {
