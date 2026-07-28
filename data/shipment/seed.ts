@@ -1,11 +1,11 @@
 import { Shipment } from "@/types";
 
-export const shipmentData: Shipment[] = [
+const shipmentData: Shipment[] = [
     {
         shipping_id: "#SH9281001",
         id: "TRK-88213-XJ",
         status: "in transit",
-        company: { logo: "@/public/images/shipment/techgear.png", name: "TechGear Inc.", company_type: "Electronics" },
+        company: { logo: "/images/shipment/techgear.png", name: "TechGear Inc.", company_type: "Electronics" },
         destination: {
             origin: { address: "Los Angeles, CA", date_time: "Mar 20, 2035 – 10:00 AM" },
             destination: { address: "Chicago, IL", date_time: "Mar 23, 2025 – 03:00 PM" },
@@ -17,7 +17,7 @@ export const shipmentData: Shipment[] = [
         shipping_id: "#SH9281002",
         id: "TRK-77104-KL",
         status: "delivered",
-        company: { logo: "@/public/images/shipment/stylehub.png", name: "StyleHub Co.", company_type: "Apparel" },
+        company: { logo: "/images/shipment/stylehub.png", name: "StyleHub Co.", company_type: "Apparel" },
         destination: {
             origin: { address: "New York, NY", date_time: "July 15, 2025 – 05:20 PM" },
             destination: { address: "Los Angeles, CA", date_time: "July 22, 2025 – 10:10 AM" },
@@ -29,7 +29,7 @@ export const shipmentData: Shipment[] = [
         shipping_id: "#SH9281003",
         id: "TRK-65590-MN",
         status: "out for delivery",
-        company: { logo: "/logos/vertexsupply.png", name: "Vertex Supply Chain", company_type: "Manufacturer" },
+        company: { logo: "/images/shipment/techgear.png", name: "Vertex Supply Chain", company_type: "Manufacturer" },
         destination: {
             origin: { address: "17 Export Zone, Narayanganj, Bangladesh", date_time: "2026-07-18T11:00:00Z" },
             destination: { address: "9 Port Access Rd, Mongla, Bangladesh", date_time: "2026-07-30T10:00:00Z" },
@@ -41,7 +41,7 @@ export const shipmentData: Shipment[] = [
         shipping_id: "#SH9281004",
         id: "TRK-90341-QR",
         status: "processing",
-        company: { logo: "/logos/apextrade.png", name: "Apex Trade Partners", company_type: "Import/Export Agency" },
+        company: { logo: "/images/shipment/techgear.png", name: "Apex Trade Partners", company_type: "Import/Export Agency" },
         destination: {
             origin: { address: "3 Terminal Yard, Savar, Bangladesh", date_time: "2026-08-01T08:00:00Z" },
             destination: { address: "56 Commerce St, Sylhet, Bangladesh", date_time: "2026-08-05T16:30:00Z" },
@@ -53,7 +53,7 @@ export const shipmentData: Shipment[] = [
         shipping_id: "#SH9281005",
         id: "TRK-51278-ZT",
         status: "delivered",
-        company: { logo: "/logos/meridianco.png", name: "Meridian & Co.", company_type: "Wholesale Supplier" },
+        company: { logo: "/images/shipment/techgear.png", name: "Meridian & Co.", company_type: "Wholesale Supplier" },
         destination: {
             origin: { address: "29 Cargo Complex, Tongi, Bangladesh", date_time: "2026-07-15T13:20:00Z" },
             destination: { address: "77 Depot Lane, Khulna, Bangladesh", date_time: "2026-07-19T09:00:00Z" },
@@ -65,7 +65,7 @@ export const shipmentData: Shipment[] = [
         shipping_id: "#SH9281006",
         id: "TRK-33481-BC",
         status: "in transit",
-        company: { logo: "/logos/bluewave.png", name: "BlueWave Exports", company_type: "Export Agency" },
+        company: { logo: "/images/shipment/techgear.png", name: "BlueWave Exports", company_type: "Export Agency" },
         destination: {
             origin: { address: "14 Riverside Rd, Barisal, Bangladesh", date_time: "2026-07-25T06:45:00Z" },
             destination: { address: "102 Dockyard St, Chittagong, Bangladesh", date_time: "2026-07-28T12:00:00Z" },
@@ -77,7 +77,7 @@ export const shipmentData: Shipment[] = [
         shipping_id: "#SH9281007",
         id: "TRK-40219-DP",
         status: "delivered",
-        company: { logo: "/logos/harvestfoods.png", name: "Harvest Foods Ltd.", company_type: "FMCG Manufacturer" },
+        company: { logo: "/images/shipment/techgear.png", name: "Harvest Foods Ltd.", company_type: "FMCG Manufacturer" },
         destination: {
             origin: { address: "5 Agro Park, Rangpur, Bangladesh", date_time: "2026-07-19T05:00:00Z" },
             destination: { address: "88 Retail Ave, Dhaka, Bangladesh", date_time: "2026-07-21T10:30:00Z" },
@@ -89,7 +89,7 @@ export const shipmentData: Shipment[] = [
         shipping_id: "#SH9281008",
         id: "TRK-28857-EF",
         status: "processing",
-        company: { logo: "/logos/steelforge.png", name: "SteelForge Industries", company_type: "Heavy Manufacturer" },
+        company: { logo: "/images/shipment/techgear.png", name: "SteelForge Industries", company_type: "Heavy Manufacturer" },
         destination: {
             origin: { address: "60 Foundry Rd, Bogura, Bangladesh", date_time: "2026-07-17T08:00:00Z" },
             destination: { address: "31 Construction Yard, Rajshahi, Bangladesh", date_time: "2026-07-31T15:00:00Z" },
@@ -101,7 +101,7 @@ export const shipmentData: Shipment[] = [
         shipping_id: "#SH9281009",
         id: "TRK-19204-GH",
         status: "processing",
-        company: { logo: "/logos/textilecraft.png", name: "TextileCraft Mills", company_type: "Textile Manufacturer" },
+        company: { logo: "/images/shipment/techgear.png", name: "TextileCraft Mills", company_type: "Textile Manufacturer" },
         destination: {
             origin: { address: "22 Weaving St, Narsingdi, Bangladesh", date_time: "2026-08-02T09:00:00Z" },
             destination: { address: "150 Fashion Blvd, Dhaka, Bangladesh", date_time: "2026-08-06T13:00:00Z" },
@@ -113,7 +113,7 @@ export const shipmentData: Shipment[] = [
         shipping_id: "#SH9281010",
         id: "TRK-70562-IJ",
         status: "in transit",
-        company: { logo: "/logos/pharmaplus.png", name: "PharmaPlus Ltd.", company_type: "Pharmaceutical" },
+        company: { logo: "/images/shipment/techgear.png", name: "PharmaPlus Ltd.", company_type: "Pharmaceutical" },
         destination: {
             origin: { address: "9 Med Park, Dhaka, Bangladesh", date_time: "2026-07-26T04:30:00Z" },
             destination: { address: "40 Health St, Cumilla, Bangladesh", date_time: "2026-07-28T11:00:00Z" },
@@ -125,7 +125,7 @@ export const shipmentData: Shipment[] = [
         shipping_id: "#SH9281011",
         id: "TRK-84420-KM",
         status: "processing",
-        company: { logo: "/logos/greenfield.png", name: "Greenfield Agro", company_type: "Agriculture Exporter" },
+        company: { logo: "/images/shipment/techgear.png", name: "Greenfield Agro", company_type: "Agriculture Exporter" },
         destination: {
             origin: { address: "3 Farmgate, Jessore, Bangladesh", date_time: "2026-07-14T07:00:00Z" },
             destination: { address: "18 Export Terminal, Mongla, Bangladesh", date_time: "2026-07-18T09:00:00Z" },
@@ -137,7 +137,7 @@ export const shipmentData: Shipment[] = [
         shipping_id: "#SH9281012",
         id: "TRK-56791-NO",
         status: "delivered",
-        company: { logo: "/logos/oceanictrade.png", name: "Oceanic Trade Co.", company_type: "Import/Export Agency" },
+        company: { logo: "/images/shipment/techgear.png", name: "Oceanic Trade Co.", company_type: "Import/Export Agency" },
         destination: {
             origin: { address: "77 Port Rd, Chittagong, Bangladesh", date_time: "2026-07-16T06:00:00Z" },
             destination: { address: "205 Business Park, Dhaka, Bangladesh", date_time: "2026-07-18T14:00:00Z" },
@@ -149,7 +149,7 @@ export const shipmentData: Shipment[] = [
         shipping_id: "#SH9281013",
         id: "TRK-63125-PQ",
         status: "in transit",
-        company: { logo: "/logos/summitelectronics.png", name: "Summit Electronics", company_type: "Electronics Manufacturer" },
+        company: { logo: "/images/shipment/techgear.png", name: "Summit Electronics", company_type: "Electronics Manufacturer" },
         destination: {
             origin: { address: "11 Tech Park, Dhaka, Bangladesh", date_time: "2026-07-27T05:15:00Z" },
             destination: { address: "63 Digital Plaza, Sylhet, Bangladesh", date_time: "2026-07-30T17:00:00Z" },
@@ -161,7 +161,7 @@ export const shipmentData: Shipment[] = [
         shipping_id: "#SH9281014",
         id: "TRK-29847-RS",
         status: "delivered",
-        company: { logo: "/logos/coastalfisheries.png", name: "Coastal Fisheries Ltd.", company_type: "Seafood Exporter" },
+        company: { logo: "/images/shipment/techgear.png", name: "Coastal Fisheries Ltd.", company_type: "Seafood Exporter" },
         destination: {
             origin: { address: "6 Harbor View, Cox's Bazar, Bangladesh", date_time: "2026-08-03T04:00:00Z" },
             destination: { address: "90 Cold Storage Rd, Chittagong, Bangladesh", date_time: "2026-08-04T10:00:00Z" },
@@ -173,7 +173,7 @@ export const shipmentData: Shipment[] = [
         shipping_id: "#SH9281015",
         id: "TRK-38102-TU",
         status: "out for delivery",
-        company: { logo: "/logos/urbanfurnish.png", name: "Urban Furnish Co.", company_type: "Furniture Manufacturer" },
+        company: { logo: "/images/shipment/techgear.png", name: "Urban Furnish Co.", company_type: "Furniture Manufacturer" },
         destination: {
             origin: { address: "50 Timber Yard, Khulna, Bangladesh", date_time: "2026-07-20T08:30:00Z" },
             destination: { address: "14 Showroom St, Dhaka, Bangladesh", date_time: "2026-08-01T12:00:00Z" },
@@ -185,7 +185,7 @@ export const shipmentData: Shipment[] = [
         shipping_id: "#SH9281016",
         id: "TRK-91456-VW",
         status: "delivered",
-        company: { logo: "/logos/primeplastics.png", name: "Prime Plastics Ltd.", company_type: "Plastics Manufacturer" },
+        company: { logo: "/images/shipment/techgear.png", name: "Prime Plastics Ltd.", company_type: "Plastics Manufacturer" },
         destination: {
             origin: { address: "27 Polymer Rd, Gazipur, Bangladesh", date_time: "2026-07-21T06:00:00Z" },
             destination: { address: "44 Industrial St, Dhaka, Bangladesh", date_time: "2026-07-23T09:00:00Z" },
@@ -197,7 +197,7 @@ export const shipmentData: Shipment[] = [
         shipping_id: "#SH9281017",
         id: "TRK-47289-XY",
         status: "in transit",
-        company: { logo: "/logos/luminatech.png", name: "Lumina Tech Solutions", company_type: "Electronics Distributor" },
+        company: { logo: "/images/shipment/techgear.png", name: "Lumina Tech Solutions", company_type: "Electronics Distributor" },
         destination: {
             origin: { address: "8 Circuit Ave, Dhaka, Bangladesh", date_time: "2026-07-26T10:00:00Z" },
             destination: { address: "72 Innovation Rd, Rajshahi, Bangladesh", date_time: "2026-07-29T15:30:00Z" },
@@ -209,7 +209,7 @@ export const shipmentData: Shipment[] = [
         shipping_id: "#SH9281018",
         id: "TRK-58374-ZA",
         status: "processing",
-        company: { logo: "/logos/craftleather.png", name: "Craft Leather Works", company_type: "Leather Goods Manufacturer" },
+        company: { logo: "/images/shipment/techgear.png", name: "Craft Leather Works", company_type: "Leather Goods Manufacturer" },
         destination: {
             origin: { address: "19 Tannery Rd, Dhaka, Bangladesh", date_time: "2026-07-13T07:30:00Z" },
             destination: { address: "35 Export Hub, Chittagong, Bangladesh", date_time: "2026-07-17T11:00:00Z" },
@@ -221,7 +221,7 @@ export const shipmentData: Shipment[] = [
         shipping_id: "#SH9281019",
         id: "TRK-62918-BD",
         status: "processing",
-        company: { logo: "/logos/novapaper.png", name: "Nova Paper Mills", company_type: "Paper Manufacturer" },
+        company: { logo: "/images/shipment/techgear.png", name: "Nova Paper Mills", company_type: "Paper Manufacturer" },
         destination: {
             origin: { address: "41 Pulp St, Khulna, Bangladesh", date_time: "2026-08-04T06:00:00Z" },
             destination: { address: "17 Print House Rd, Dhaka, Bangladesh", date_time: "2026-08-07T13:00:00Z" },
@@ -233,7 +233,7 @@ export const shipmentData: Shipment[] = [
         shipping_id: "#SH9281020",
         id: "TRK-73605-CE",
         status: "delivered",
-        company: { logo: "/logos/aquapure.png", name: "AquaPure Beverages", company_type: "Beverage Manufacturer" },
+        company: { logo: "/images/shipment/techgear.png", name: "AquaPure Beverages", company_type: "Beverage Manufacturer" },
         destination: {
             origin: { address: "58 Spring Rd, Mymensingh, Bangladesh", date_time: "2026-07-22T05:00:00Z" },
             destination: { address: "26 Distribution Center, Dhaka, Bangladesh", date_time: "2026-07-24T09:30:00Z" },
@@ -245,7 +245,7 @@ export const shipmentData: Shipment[] = [
         shipping_id: "#SH9281021",
         id: "TRK-84730-FG",
         status: "in transit",
-        company: { logo: "/logos/goldenspice.png", name: "Golden Spice Traders", company_type: "Food Exporter" },
+        company: { logo: "/images/shipment/techgear.png", name: "Golden Spice Traders", company_type: "Food Exporter" },
         destination: {
             origin: { address: "12 Spice Market, Chattogram, Bangladesh", date_time: "2026-07-25T08:00:00Z" },
             destination: { address: "39 Wholesale Rd, Dhaka, Bangladesh", date_time: "2026-07-28T14:00:00Z" },
@@ -257,7 +257,7 @@ export const shipmentData: Shipment[] = [
         shipping_id: "#SH9281022",
         id: "TRK-95216-HI",
         status: "delivered",
-        company: { logo: "/logos/ironpeak.png", name: "IronPeak Steelworks", company_type: "Steel Manufacturer" },
+        company: { logo: "/images/shipment/techgear.png", name: "IronPeak Steelworks", company_type: "Steel Manufacturer" },
         destination: {
             origin: { address: "70 Rolling Mill Rd, Chittagong, Bangladesh", date_time: "2026-07-19T09:00:00Z" },
             destination: { address: "5 Construction Site, Dhaka, Bangladesh", date_time: "2026-08-02T16:00:00Z" },
@@ -269,7 +269,7 @@ export const shipmentData: Shipment[] = [
         shipping_id: "#SH9281023",
         id: "TRK-16483-JK",
         status: "in transit",
-        company: { logo: "/logos/velvetcosmetics.png", name: "Velvet Cosmetics", company_type: "Cosmetics Manufacturer" },
+        company: { logo: "/images/shipment/techgear.png", name: "Velvet Cosmetics", company_type: "Cosmetics Manufacturer" },
         destination: {
             origin: { address: "24 Beauty Park, Dhaka, Bangladesh", date_time: "2026-08-05T07:00:00Z" },
             destination: { address: "61 Mall Rd, Sylhet, Bangladesh", date_time: "2026-08-08T12:30:00Z" },
@@ -281,7 +281,7 @@ export const shipmentData: Shipment[] = [
         shipping_id: "#SH9281024",
         id: "TRK-27590-LM",
         status: "delivered",
-        company: { logo: "/logos/brightauto.png", name: "Bright Auto Parts", company_type: "Automotive Manufacturer" },
+        company: { logo: "/images/shipment/techgear.png", name: "Bright Auto Parts", company_type: "Automotive Manufacturer" },
         destination: {
             origin: { address: "33 Assembly Line, Gazipur, Bangladesh", date_time: "2026-07-20T06:30:00Z" },
             destination: { address: "48 Garage Row, Dhaka, Bangladesh", date_time: "2026-07-22T11:00:00Z" },
@@ -293,7 +293,7 @@ export const shipmentData: Shipment[] = [
         shipping_id: "#SH9281025",
         id: "TRK-38904-NP",
         status: "in transit",
-        company: { logo: "/logos/crystalglass.png", name: "Crystal Glassworks", company_type: "Glass Manufacturer" },
+        company: { logo: "/images/shipment/techgear.png", name: "Crystal Glassworks", company_type: "Glass Manufacturer" },
         destination: {
             origin: { address: "16 Furnace Rd, Narayanganj, Bangladesh", date_time: "2026-07-27T07:00:00Z" },
             destination: { address: "29 Interior Ave, Chittagong, Bangladesh", date_time: "2026-07-30T13:00:00Z" },
@@ -305,7 +305,7 @@ export const shipmentData: Shipment[] = [
         shipping_id: "#SH9281026",
         id: "TRK-49317-QS",
         status: "delivered",
-        company: { logo: "/logos/moonlightdairy.png", name: "Moonlight Dairy", company_type: "Dairy Producer" },
+        company: { logo: "/images/shipment/techgear.png", name: "Moonlight Dairy", company_type: "Dairy Producer" },
         destination: {
             origin: { address: "20 Pasture Rd, Pabna, Bangladesh", date_time: "2026-07-12T05:00:00Z" },
             destination: { address: "55 Cold Storage Ave, Dhaka, Bangladesh", date_time: "2026-07-16T09:00:00Z" },
@@ -317,7 +317,7 @@ export const shipmentData: Shipment[] = [
         shipping_id: "#SH9281027",
         id: "TRK-50628-RT",
         status: "delivered",
-        company: { logo: "/logos/skylinepaints.png", name: "Skyline Paints Ltd.", company_type: "Paint Manufacturer" },
+        company: { logo: "/images/shipment/techgear.png", name: "Skyline Paints Ltd.", company_type: "Paint Manufacturer" },
         destination: {
             origin: { address: "38 Pigment Rd, Dhaka, Bangladesh", date_time: "2026-07-18T06:00:00Z" },
             destination: { address: "10 Hardware St, Rajshahi, Bangladesh", date_time: "2026-07-20T12:00:00Z" },
@@ -329,7 +329,7 @@ export const shipmentData: Shipment[] = [
         shipping_id: "#SH9281028",
         id: "TRK-61735-SU",
         status: "processing",
-        company: { logo: "/logos/starlitjewels.png", name: "Starlit Jewels", company_type: "Jewelry Manufacturer" },
+        company: { logo: "/images/shipment/techgear.png", name: "Starlit Jewels", company_type: "Jewelry Manufacturer" },
         destination: {
             origin: { address: "4 Gem Quarter, Dhaka, Bangladesh", date_time: "2026-08-06T08:00:00Z" },
             destination: { address: "27 Boutique Row, Chittagong, Bangladesh", date_time: "2026-08-09T14:00:00Z" },
@@ -341,7 +341,7 @@ export const shipmentData: Shipment[] = [
         shipping_id: "#SH9281029",
         id: "TRK-72840-TV",
         status: "out for delivery",
-        company: { logo: "/logos/riverstone.png", name: "Riverstone Ceramics", company_type: "Ceramics Manufacturer" },
+        company: { logo: "/images/shipment/techgear.png", name: "Riverstone Ceramics", company_type: "Ceramics Manufacturer" },
         destination: {
             origin: { address: "13 Kiln Rd, Bogura, Bangladesh", date_time: "2026-07-21T07:30:00Z" },
             destination: { address: "42 Home Decor Ave, Dhaka, Bangladesh", date_time: "2026-08-03T15:00:00Z" },
@@ -353,7 +353,7 @@ export const shipmentData: Shipment[] = [
         shipping_id: "#SH9281030",
         id: "TRK-83951-UW",
         status: "in transit",
-        company: { logo: "/logos/horizonpackaging.png", name: "Horizon Packaging Co.", company_type: "Packaging Manufacturer" },
+        company: { logo: "/images/shipment/techgear.png", name: "Horizon Packaging Co.", company_type: "Packaging Manufacturer" },
         destination: {
             origin: { address: "25 Carton Rd, Narayanganj, Bangladesh", date_time: "2026-07-26T09:00:00Z" },
             destination: { address: "51 Fulfillment Center, Dhaka, Bangladesh", date_time: "2026-07-28T16:00:00Z" },
@@ -362,3 +362,5 @@ export const shipmentData: Shipment[] = [
         },
     },
 ];
+
+export default shipmentData

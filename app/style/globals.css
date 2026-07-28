@@ -9,16 +9,17 @@
 
 @layer base {
 
+  .login-btn {@apply w-full h-11 text-base font-semibold bg-[#333333] text-[#FEFEFE] rounded-lg mb-5 cursor-pointer}
     .db-card {@apply bg-white rounded-xl p-4}
 
     .input-field-control {@apply focus-within:border-primary border border-transparent h-[38px] rounded-lg bg-[#F5F5F5] outline-none px-3 py-2 w-full}
     textarea.db-field-control {@apply h-16}
     .input-field-title {@apply text-[11px] font-semibold mb-1.5}
     .input-field-control::placeholder {@apply text-xs text-paragraph}
-    .input-field-checkbox { @apply flex items-center pt-1 w-fit cursor-pointer }
-    .custom-checkbox { @apply relative w-4 h-4 cursor-pointer }
+    .input-field-checkbox { @apply flex items-center gap-2 w-fit cursor-pointer }
+    .custom-checkbox { @apply relative w-3 h-3 cursor-pointer }
     .custom-checkbox-field { @apply absolute z-10 opacity-0 w-full h-full appearance-none cursor-pointer }
-    .custom-checkbox-icon { @apply absolute top-0 left-0 w-full h-full text-center rounded leading-[14px] text-[10px] border cursor-pointer border-[#d9dee3] text-white }
+    .custom-checkbox-icon { @apply absolute top-0 left-0 w-full h-full text-center rounded !leading-[10px] text-[6px] border cursor-pointer border-[#d9dee3] text-white }
     .custom-checkbox-field:checked + .custom-checkbox-icon { @apply bg-primary border-primary}
     .error-message {@apply text-xs text-red-500 mt-1}
 

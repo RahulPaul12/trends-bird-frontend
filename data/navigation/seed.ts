@@ -22,7 +22,7 @@ export const navItems:NavItem[] = [
   {
     id: "shipments",
     label: "Shipments",
-    href: "/shipments",
+    href: "/shipments?view=grid",
     icon: "icon-shipments",
   },
   {

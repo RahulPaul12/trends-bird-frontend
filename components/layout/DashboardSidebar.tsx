@@ -4,13 +4,13 @@ import Link from "next/link";
 import logo from "@/public/images/logo.png";
 import fabimage from "@/public/images/fabicon.png"
 import { CircleX } from "lucide-react";
-import { usePathname } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import { navItems } from "@/data/navigation/seed";
 import pattern from "@/public/images/Patterns.svg";
 
 const DashboardSidebar = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) => {
   const pathname = usePathname();
-
+  
   return (
     <>
     {isOpen && (
@@ -33,7 +33,8 @@ const DashboardSidebar = ({ isOpen, onClose }: { isOpen: boolean; onClose: () =>
         </div>
         <ul className="db-sidebar-nav-list">
           {navItems.map((item) => {
-            const isActive = pathname === item.href;
+            const itemPath = item.href.split("?")[0]
+            const isActive = pathname === itemPath;
             return (
               <li
                 key={item.id}
