@@ -63,3 +63,5 @@ body {
   font-family: var(--font-nunito);
   color: black;
 }
+
+.piechart .apexcharts-legend.apx-legend-position-bottom.apexcharts-align-center {@apply justify-normal!}

@@ -11,9 +11,10 @@ const ShipmentsPage = () => {
     const searchParams = useSearchParams();
     const view = searchParams.get("view") === "table" ? "table" : "grid";
     const handleViewChange = (newView: "grid" | "table") => {
-        const params = new URLSearchParams(searchParams.toString());
-        params.set("view", newView);
-        router.push(`${pathname}?${params.toString()}`);
+    const params = new URLSearchParams(searchParams.toString());
+    params.set("view", newView);
+    router.push(`${pathname}?${params.toString()}`);
+
     };
     return (
         <section>
@@ -33,7 +34,7 @@ const ShipmentsPage = () => {
                         <button onClick={() => handleViewChange("table")} className={`px-3 h-8 rounded-md text-xs font-semibold transition-colors ${view === "table" ? "bg-white shadow-sm" : "text-paragraph"}`}>Table
                         </button>
                     </div>
-                    <Link href="/shipments/new"><button className="bg-black text-white px-4 h-10 rounded-lg">+ New Shipment</button></Link>
+                    <Link href="/shipments/new" className="bg-black text-white px-4 h-10 rounded-lg flex items-center">+ New Shipment</Link>
                 </div>
             </div>
             {view === "grid" ?

@@ -6,10 +6,10 @@ type ShipmentGridViewProps = {
 
 const ShipmentGridView = ({shipment}:ShipmentGridViewProps) => {
     return (
-                    <div className="grid grid-cols-12 gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-5">
                 {
                     shipment.map((item:Shipment)=>(
-                    <div className="col-span-3" key={item.id}>
+                    <div className="col-span-1 lg:col-span-3" key={item.id}>
                     <div className="db-card">
                         <div className="flex justify-between items-center gap-2 mb-4">
                             <div>
