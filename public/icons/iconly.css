@@ -7,8 +7,8 @@
   font-family: "Iconly";
   font-style: normal;
   font-weight: 400;
-  src: url("./iconly.eot?1785153934416");
-  src: url("./iconly.eot?#iefix") format("embedded-opentype"), url("./iconly.woff2?1785153934416") format("woff2"), url("./iconly.woff?1785153934416") format("woff"), url("./iconly.ttf?1785153934416") format("truetype"), url("./iconly.svg?1785153934416#Iconly") format("svg");
+  src: url("./iconly.eot?1785303567633");
+  src: url("./iconly.eot?#iefix") format("embedded-opentype"), url("./iconly.woff2?1785303567633") format("woff2"), url("./iconly.woff?1785303567633") format("woff"), url("./iconly.ttf?1785303567633") format("truetype"), url("./iconly.svg?1785303567633#Iconly") format("svg");
 }
 
 [class="icon"], [class^="icon-"], [class*=" icon-"] {
@@ -85,4 +85,44 @@
 
 .icon-linkedin:before {
   content: "\e00f";
+}
+
+.icon-search:before {
+  content: "\e010";
+}
+
+.icon-sealcheck:before {
+  content: "\e011";
+}
+
+.icon-receiptx:before {
+  content: "\e012";
+}
+
+.icon-circledashed:before {
+  content: "\e013";
+}
+
+.icon-fadershorizontal:before {
+  content: "\e014";
+}
+
+.icon-sort:before {
+  content: "\e015";
+}
+
+.icon-filex:before {
+  content: "\e016";
+}
+
+.icon-notification:before {
+  content: "\e017";
+}
+
+.icon-chatdots:before {
+  content: "\e018";
+}
+
+.icon-gearsix:before {
+  content: "\e019";
 }

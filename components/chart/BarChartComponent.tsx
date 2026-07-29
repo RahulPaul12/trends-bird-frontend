@@ -20,6 +20,7 @@ const BarChartComponent = () => {
             type: 'bar',
             height: 350,
         },
+        colors:['#856DF3', '#333333'],
         plotOptions: {
             bar: {
                 horizontal: false,

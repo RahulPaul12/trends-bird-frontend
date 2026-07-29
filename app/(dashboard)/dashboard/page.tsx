@@ -1,5 +1,7 @@
 import BarChartComponent from "@/components/chart/BarChartComponent";
 import PieChartComponent from "@/components/chart/PieChartComponent";
+import StackChartComponent from "@/components/chart/StackChartComponent";
+import TableComponent from "@/components/TableComponent";
 import { ApexOptions } from "apexcharts";
 import Link from "next/link";
 import ReactApexChart from "react-apexcharts";
@@ -67,95 +69,18 @@ const series = [{ name: 'Sales', data: [44, 55, 41] }]
                     </div>
                 </div>
             </div>
-            {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[858fr_299fr] gap-5 mb-5">
-                <div className="col-span-1">
-                    <div className="flex gap-5 mb-5">
-                        <div className="db-card w-full">
-                            <p className="text-xs text-paragraph mb-3">Total SKU</p>
-                            <div className="flex justify-between items-center">
-                                <span className="text-xl font-bold leading-tight">285</span>
-                                <span className="px-1 py-0.5 text-[10px] font-semibold text-[#007837] bg-[#D9F9E7] rounded-full">+2.58%</span>
-                            </div>
-                        </div>
-                        <div className="db-card w-full">
-                            <p className="text-xs text-paragraph mb-3">Total SKU</p>
-                            <div className="flex justify-between items-center">
-                                <span className="text-xl font-bold leading-tight">285</span>
-                                <span className="px-1 py-0.5 text-[10px] font-semibold text-[#007837] bg-[#D9F9E7] rounded-full">+2.58%</span>
-                            </div>
-                        </div>
-                        <div className="db-card w-full">
-                            <p className="text-xs text-paragraph mb-3">Total SKU</p>
-                            <div className="flex justify-between items-center">
-                                <span className="text-xl font-bold leading-tight">285</span>
-                                <span className="px-1 py-0.5 text-[10px] font-semibold text-[#007837] bg-[#D9F9E7] rounded-full">+2.58%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="grid grid-cols-2 lg:grid-cols-[369fr_469fr] gap-5">
-                        <div className="col-span-1">
-                            
-                        </div>
-                        <div className="col-span-1">
-                            <div className="db-card h-full">
-    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-span-1">
-                    <div className="db-card h-full">
-                        <h6 className="text-base font-semibold mb-3">chart</h6>
-                        <PieChartComponent series={[44, 55, 13, 43]} categories={['Team A', 'Team B', 'Team C', 'Team D']}/>
-                    </div>
-                </div>
-                <div className="col-span-1 order-2 lg:order-1">
-                    <div className="db-card">
-                        <div className="db-card-header border-none">
-                            <h3 className="db-card-title">table with widgets</h3>
-                        </div>
-                        <div className="db-table-responsive">
-                            <table className="db-table stripe">
-                                <thead className="db-table-head">
-                                    <tr className="db-table-head-tr">
-                                        <th className="db-table-head-th">Name</th>
-                                        <th className="db-table-head-th">code</th>
-                                        <th className="db-table-head-th">category</th>
-                                        <th className="db-table-head-th">price</th>
-                                        <th className="db-table-head-th">status</th>
-                                        <th className="db-table-head-th">action</th>
-                                    </tr>
-                                </thead>
-                                <tbody className="db-table-body">
-                                    <tr className="db-table-body-tr">
-                                        <td className="db-table-body-td">miron mahmud</td>
-                                        <td className="db-table-body-td">734974</td>
-                                        <td className="db-table-body-td">jeans</td>
-                                        <td className="db-table-body-td">$83.00</td>
-                                        <td className="db-table-body-td"><span className="db-table-badge text-green-600 bg-green-100">active</span></td>
-                                        <td className="db-table-body-td">
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                 <div className="col-span-1 order-1 lg:order-2">
-                    <div className="db-card h-full">
-                        <h6 className="text-base font-semibold mb-3">Package status</h6>
-                    </div>
-                </div>
-            </div> */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[858fr_299fr] gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[858fr_299fr] gap-5 mb-5">
                 <div className="col-span-1">
                     <div className="grid grid-cols-2 lg:grid-cols-[369fr_469fr] gap-5">
                         <div className="col-span-1">
-                            
+                            <div className="db-card">
+                                <StackChartComponent/>
+                            </div>
                         </div>
                         <div className="col-span-1">
                             <div className="db-card h-full">
-    
+                                <h6 className="text-base font-semibold mb-3">Warehouse Activity Log</h6>
+                                <BarChartComponent />
                             </div>
                         </div>
                     </div>
@@ -163,6 +88,71 @@ const series = [{ name: 'Sales', data: [44, 55, 41] }]
                 <div className="col-span-1">
                     <div className="db-card h-full">
                         <h6 className="text-base font-semibold mb-3">Warehouse Activity Log</h6>
+                        <PieChartComponent series={[44, 55, 41]} categories={['Team A', 'Team B', 'Team C']}/>
+                    </div>
+                </div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[858fr_299fr] gap-5">
+                <div className="col-span-1">
+                    <div className="db-card">
+                        <TableComponent/>
+                    </div>
+                </div>
+                <div className="col-span-1">
+                    <div className="db-card h-full">
+                        <div className="flex justify-between items-center mb-5">
+                            <h6 className="text-base font-bold">Recent Activity</h6>
+                            <button>View all</button>
+                        </div>
+                        <div className="flex w-full flex-col items-start">
+                            <div className="group flex gap-x-4 w-full">
+                                <div className="relative">
+                                    <div className="absolute left-1/2 top-0 h-full w-0.5 -translate-x-1/2 bg-[#E0E0E0]"></div>
+                                    <span className="relative z-10 grid h-9 w-9 place-items-center rounded-full bg-[#E3DDFF] text-primary"></span>
+                                </div>
+                                <div className="pb-5 w-full">
+                                    <div className="flex flex-col justify-between items-start">
+                                        <p className="text-sm text-heading mb-2 leading-tight">User @TechGuru99 submitted a bulk shipment request</p>
+                                        <span className="text-[10px] text-paragraph">12:00 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="group flex gap-x-4 w-full">
+                                <div className="relative">
+                                    <div className="absolute left-1/2 top-0 h-full w-0.5 -translate-x-1/2 bg-[#E0E0E0]"></div>
+                                    <span className="relative z-10 grid h-9 w-9 place-items-center rounded-full bg-[#E3DDFF] text-primary"></span>
+                                </div>
+                                <div className="pb-5 w-full">
+                                    <div className="flex flex-col justify-between items-start">
+                                        <p className="text-sm text-heading mb-2 leading-tight">User @TechGuru99 submitted a bulk shipment request</p>
+                                        <span className="text-[10px] text-paragraph">12:00 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="group flex gap-x-4 w-full">
+                                <div className="relative">
+                                    <div className="absolute left-1/2 top-0 h-full w-0.5 -translate-x-1/2 bg-[#E0E0E0]"></div>
+                                    <span className="relative z-10 grid h-9 w-9 place-items-center rounded-full bg-[#E3DDFF] text-primary"></span>
+                                </div>
+                                <div className="pb-5 w-full">
+                                    <div className="flex flex-col justify-between items-start">
+                                        <p className="text-sm text-heading mb-2 leading-tight">User @TechGuru99 submitted a bulk shipment request</p>
+                                        <span className="text-[10px] text-paragraph">12:00 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="group flex gap-x-4 w-full">
+                                <div className="relative">
+                                    <span className="relative z-10 grid h-9 w-9 place-items-center rounded-full bg-[#E3DDFF] text-primary"></span>
+                                </div>
+                                <div className="pb-5 w-full">
+                                    <div className="flex flex-col justify-between items-start">
+                                        <p className="text-sm text-heading mb-2 leading-tight">User @TechGuru99 submitted a bulk shipment request</p>
+                                        <span className="text-[10px] text-paragraph">12:00 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

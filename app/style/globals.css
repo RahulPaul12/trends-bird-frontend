@@ -26,14 +26,13 @@
 
     .sidebar {@apply md:px-2 lg:px-4 px-4 py-5 shrink-0 max-w-[223px] h-dvh fixed top-0 left-0 z-30 bg-white max-tablet:-translate-x-full shadow-xs transition-transform duration-300}
     .db-sidebar.active { @apply translate-x-0 lg:-translate-x-full lg:shadow-none }
-    .db-sidebar-header { @apply flex items-center justify-between mb-3 pb-3}
+    .db-sidebar { @apply flex items-center justify-between mb-3 pb-3}
 
     .db-sidebar-nav-item, .db-sidebar-nav-list {@apply w-full lg:w-full tablet:w-fit}
-    .db-sidebar-nav-item.active .db-sidebar-nav-menu { @apply text-primary bg-[#E3DDFF] }
-    .db-sidebar-nav-item.router-link-active .db-sidebar-nav-menu { @apply text-primary bg-[#E3DDFF] }
-    .db-sidebar-nav-menu.router-link-active { @apply text-primary bg-primary/5 }
-    .db-sidebar-nav-menu { @apply capitalize w-full lg:w-full tablet:w-fit flex items-center justify-start text-left rounded gap-3 py-2.5 px-3 transition hover:bg-gray-100 }
-    .db-sidebar-nav-menu i { @apply text-[22px] }
+    .db-sidebar-nav-item.active .db-sidebar-nav-menu { @apply text-[#2A1298]! bg-[#E3DDFF]! }
+    .db-sidebar-nav-menu { @apply text-paragraph capitalize w-full lg:w-full tablet:w-fit flex items-center justify-start text-left rounded gap-3 py-2.5 px-3 transition hover:bg-gray-100 }
+    .db-sidebar-nav-menu i { @apply text-[22px] text-paragraph}
+    .db-sidebar-nav-item.active .db-sidebar-nav-menu i {@apply text-[#2A1298]!}
     .db-sidebar-nav-menu span { @apply text-base flex-auto text-left tablet:hidden lg:block max-tablet:block}
 
 
@@ -41,7 +40,7 @@
     .db-breadcrumb { @apply flex flex-col flex-wrap gap-y-2 gap-x-5 items-center justify-center sm:flex-row sm:justify-between text-black}
     .db-breadcrumb-list { @apply flex flex-wrap items-center justify-center sm:justify-end }
     .db-breadcrumb-item { @apply capitalize text-[11px]}
-    .db-breadcrumb-link { @apply transition hover:text-primary after:content-['/'] after:px-1.5 }
+    .db-breadcrumb-link { @apply transition text-primary after:content-['/'] after:text-paragraph after:px-1.5 }
 
 
     /* TABLE */
@@ -55,6 +54,7 @@
     .db-table-body-td { @apply px-4 py-3 text-sm }
 
     .db-footer {@apply flex flex-col md:flex-row gap-2 md:gap-8 justify-center md:justify-between lg:justify-normal items-center px-5 pb-5 bg-[#F0F0F0]}
+
 
   }
 

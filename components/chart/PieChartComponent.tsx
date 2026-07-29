@@ -7,6 +7,7 @@ const PieChartComponent = ({ series, categories }: { series: number[]; categorie
             type: 'donut',
         },
         labels: categories,
+        colors: ['#856DF3', '#757575', '#333333'],
         legend: {
             position: 'bottom',
             markers: {
