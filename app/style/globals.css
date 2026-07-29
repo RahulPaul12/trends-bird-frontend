@@ -21,7 +21,7 @@
     .custom-checkbox-field { @apply absolute z-10 opacity-0 w-full h-full appearance-none cursor-pointer }
     .custom-checkbox-icon { @apply absolute top-0 left-0 w-full h-full text-center rounded !leading-[10px] text-[6px] border cursor-pointer border-[#d9dee3] text-white }
     .custom-checkbox-field:checked + .custom-checkbox-icon { @apply bg-primary border-primary}
-    .error-message {@apply text-xs text-red-500 mt-1}
+    .error-message {@apply text-xs text-primary mt-1}
 
 
     .sidebar {@apply md:px-2 lg:px-4 px-4 py-5 shrink-0 max-w-[223px] h-dvh fixed top-0 left-0 z-30 bg-white max-tablet:-translate-x-full shadow-xs transition-transform duration-300}

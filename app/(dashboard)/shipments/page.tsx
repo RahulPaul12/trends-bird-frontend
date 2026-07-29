@@ -18,7 +18,7 @@ const ShipmentsPage = () => {
     };
     return (
         <section>
-            <div className="flex justify-between items-center mb-5">
+            <div className="flex justify-between items-center mb-5 max-sm:hidden">
                 <div>
                     <h2 className="text-2xl font-bold">Shipments</h2>
                     <div className="db-breadcrumb">

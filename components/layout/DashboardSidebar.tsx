@@ -3,8 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import logo from "@/public/images/logo.png";
 import fabimage from "@/public/images/fabicon.png"
+import avatar from "@/public/images/avatar.png"
 import { CircleX } from "lucide-react";
-import { usePathname, useSearchParams } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { navItems } from "@/data/navigation/seed";
 import pattern from "@/public/images/Patterns.svg";
 
@@ -31,6 +32,21 @@ const DashboardSidebar = ({ isOpen, onClose }: { isOpen: boolean; onClose: () =>
             <CircleX size={16} color="#e12323" />
           </button>
         </div>
+        <Link href={"#"} className="max-sm:hidden flex lg:hidden justify-center items-center">
+             <Image className="h-9 w-9 rounded-md"  src={avatar} alt="avatar" width={100} height={100}/>
+        </Link>
+        <div className="p-2 rounded-lg bg-[#F0F0F0] mb-3 max-lg:hidden max-sm:block block">
+            <div className="flex items-center gap-2">
+                <div className="h-9 w-9 rounded-md flex items-center justify-center bg-white text-xs font-bold">
+                  <Image src={avatar} alt="avatar" width={100} height={100}/>
+                </div>
+                <div className="flex-auto">
+                    <p className="text-sm font-semibold">John Doe</p>
+                    <span className="text-paragraph text-xs">Admin</span>
+                </div>
+                <i className="icon-arrow-down"></i>
+            </div>
+        </div>
         <ul className="db-sidebar-nav-list mb-4 pb-6 border-b border-[#F0F0F0]">
           {navItems.map((item) => {
             const itemPath = item.href.split("?")[0]
@@ -52,18 +68,22 @@ const DashboardSidebar = ({ isOpen, onClose }: { isOpen: boolean; onClose: () =>
         </ul>
         <ul className="db-sidebar-nav-list mb-6">
               <li className={`db-sidebar-nav-item }`}>
-                <Link href={"#"} className="db-sidebar-nav-menu">
+                <Link href={"#"} className="db-sidebar-nav-menu relative">
                   <i className={`icon-chatdots shrink-0`} aria-hidden="true" />
-                  <span className="text-sm font-semibold flex-auto">
+                  <span className="max-sm:hidden md:block lg:hidden w-2 h-2 rounded-full bg-primary absolute right-3 top-1/2 -translate-y-1/2"></span>
+                  <span className="text-sm font-semibold flex-auto flex-nowrap items-center justify-between gap-2 max-sm:block md:hidden lg:flex">
                     Message
+                    <p className="block w-fit h-5 leading-5 px-1.5 text-white text-xs bg-primary rounded-lg">19</p>
                   </span>
                 </Link>
               </li>
               <li className={`db-sidebar-nav-item }`}>
-                <Link href={"#"} className="db-sidebar-nav-menu">
+                <Link href={"#"} className="db-sidebar-nav-menu relative">
                   <i className={`icon-notification shrink-0`} aria-hidden="true" />
-                  <span className="text-sm font-semibold flex-auto">
+                  <span className="max-sm:hidden md:block lg:hidden w-2 h-2 rounded-full bg-primary absolute right-3 top-1/2 -translate-y-1/2"></span>
+                  <span className="text-sm font-semibold flex-auto flex-nowrap items-center justify-between gap-2 max-sm:block md:hidden lg:flex">
                     Notifications
+                    <p className="block w-fit h-5 leading-5 px-1.5 text-white text-xs bg-primary rounded-lg">19</p>
                   </span>
                 </Link>
               </li>

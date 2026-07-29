@@ -1,11 +1,42 @@
 import { Shipment } from "@/types"
 import Image from "next/image"
+import Link from "next/link";
 type ShipmentGridViewProps = {
     shipment: Shipment[];
 };
 
 const ShipmentGridView = ({shipment}:ShipmentGridViewProps) => {
     return (
+        <>
+            <div className="flex max-sm:flex-col gap-4 justify-between items-center mb-4 max-sm:w-full">
+                    <div className="flex gap-2 bg-white rounded-lg max-sm:w-full">
+                        <button className={`rounded-lg px-5 py-2.25 text-xs font-semibold text-white bg-black`}>All</button>
+                        <button className={`rounded-lg px-5 py-2.25 text-xs font-semibold text-paragraph bg-white`}>Completed</button>
+                        <button className={`rounded-lg px-5 py-2.25 text-xs font-semibold text-paragraph bg-white`}>Delivery</button>
+                        <button className={`rounded-lg px-5 py-2.25 text-xs font-semibold text-paragraph bg-white`}>Delivered</button>
+                    </div>
+                    <div className="rounded-lg bg-white w-full p-2 max-sm:flex hidden ">
+                        <div className="flex items-center justify-between w-full">
+                            <form className="flex items-center gap-2 h-9 p-2.5">
+                                <button type="submit"><i className="icon-search"></i></button>
+                                <input type="text" placeholder="Search invoices" className="px-2 outline-none"/>
+                            </form>
+                            <div className="flex gap-2 items-center">
+                                <button className="h-9 w-9 rounded-lg bg-white flex justify-center items-center"><i className="icon-fadershorizontal"></i></button>
+                                <Link href="/shipments/new" className="bg-black text-white px-4 h-9 rounded-lg flex items-center text-xs font-semibold">+ <span className="max-lg:hidden">New Shipment</span></Link>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex gap-2.5 max-sm:hidden">
+                        <form className="flex items-center gap-2 h-9 p-2.5 rounded-lg bg-white">
+                            <button type="submit"><i className="icon-search"></i></button>
+                            <input type="text" placeholder="Search invoices" className="px-2 outline-none max-lg:hidden"/>
+                        </form>
+                        <button className="h-9 w-9 rounded-lg bg-white flex justify-center items-center max-sm:hidden"><i className="icon-fadershorizontal"></i></button>
+                        <Link href="/shipments/new" className="bg-black text-white px-4 h-9 rounded-lg flex items-center text-xs font-semibold max-sm:hidden">+ <span className="max-lg:hidden">New Shipment</span></Link>
+                    </div>
+            </div>
+        
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-5">
                 {
                     shipment.map((item:Shipment)=>(
@@ -78,6 +109,8 @@ const ShipmentGridView = ({shipment}:ShipmentGridViewProps) => {
                     ))
                 }
             </div>
+
+        </>
     )
 }
 
