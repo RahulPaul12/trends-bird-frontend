@@ -1,4 +1,5 @@
 'use client'
+import { ApexOptions } from "apexcharts"
 import ReactApexChart from "react-apexcharts"
 
 const StackChartComponent = () => {
@@ -67,7 +68,7 @@ const StackChartComponent = () => {
   ]
 
     return (
-        <ReactApexChart options={options} series={series} type="bar" height={150} />
+        <ReactApexChart options={options as ApexOptions} series={series} type="bar" height={150} />
     )
 }
 
