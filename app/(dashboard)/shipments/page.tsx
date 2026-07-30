@@ -1,20 +1,21 @@
 'use client'
 
+import { Suspense } from "react";
 import Link from "next/link";
 import shipment from "@/data/shipment/seed"
 import ShipmentGridView from "@/components/shipment/ShipmentGridView";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import ShipmentTableView from "@/components/shipment/ShipmentTableView";
-const ShipmentsPage = () => {
+
+const ShipmentsContent = () => {
     const router = useRouter();
     const pathname = usePathname();
     const searchParams = useSearchParams();
     const view = searchParams.get("view") === "table" ? "table" : "grid";
     const handleViewChange = (newView: "grid" | "table") => {
-    const params = new URLSearchParams(searchParams.toString());
-    params.set("view", newView);
-    router.push(`${pathname}?${params.toString()}`);
-
+        const params = new URLSearchParams(searchParams.toString());
+        params.set("view", newView);
+        router.push(`${pathname}?${params.toString()}`);
     };
     return (
         <section>
@@ -23,7 +24,7 @@ const ShipmentsPage = () => {
                     <h2 className="text-2xl font-bold">Shipments</h2>
                     <div className="db-breadcrumb">
                         <ul className="db-breadcrumb-list">
-                            <li className="db-breadcrumb-item"><Link className="db-breadcrumb-link" href="/dashboard">Dashboard</Link></li>                   
+                            <li className="db-breadcrumb-item"><Link className="db-breadcrumb-link" href="/dashboard">Dashboard</Link></li>
                             <li className="db-breadcrumb-item">Shipments</li>
                         </ul>
                     </div>
@@ -41,6 +42,14 @@ const ShipmentsPage = () => {
             (<ShipmentGridView shipment={shipment}/>) : ( <ShipmentTableView shipment= {shipment}/>)
              }
         </section>
+    );
+};
+
+const ShipmentsPage = () => {
+    return (
+        <Suspense fallback={<div>Loading...</div>}>
+            <ShipmentsContent />
+        </Suspense>
     );
 };
 
