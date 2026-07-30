@@ -45,7 +45,7 @@ const StackChartComponent = () => {
     },
     tooltip: {
       y: {
-        formatter: (val) => val + 'K',
+        formatter: (val: number | undefined) => val + 'K',
       },
     },
     fill: {

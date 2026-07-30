@@ -50,7 +50,7 @@ const BarChartComponent = () => {
         },
         tooltip: {
             y: {
-                formatter: (val: number) => `$ ${val} thousands`,
+                formatter: (val: number | undefined) => `$ ${val} thousands`,
             },
         },
     };
