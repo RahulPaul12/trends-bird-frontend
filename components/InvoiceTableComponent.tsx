@@ -1,7 +1,11 @@
 import Image from "next/image"
-import shipmentData from "@/data/shipment/seed";
+import { Shipment } from "@/types"
 
-const TableComponent = () => {
+type InvoiceViewProps = {
+    shipment: Shipment[];
+};
+
+const TableComponent = ({ shipment }: InvoiceViewProps) => {
     return (
         <div className="w-full">
             <div className="overflow-x-auto">
@@ -24,7 +28,7 @@ const TableComponent = () => {
                     </thead>
                     <tbody className="divide-y divide-[#E0E0E0]">
                       {
-                        shipmentData.map((item)=> (
+                        shipment.map((item)=> (
                           <tr key={item.id}>
                             <td className="px-2.5 py-3">
                               <div className="custom-checkbox">

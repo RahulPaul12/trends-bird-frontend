@@ -1,6 +1,6 @@
-import TableComponent from "@/components/TableComponent"
+import InvoiceTableComponent from "@/components/InvoiceTableComponent"
 import Link from "next/link"
-
+import shipmentData from "@/data/shipment/seed"
 const Invoice = () => {
     return (
         <section>
@@ -93,7 +93,7 @@ const Invoice = () => {
                                 <Link href="/shipments/new" className="bg-black text-white px-4 h-7 rounded-lg flex items-center text-xs font-semibold">+ <span className="max-sm:hidden">New Shipment</span></Link>
                             </div>
                         </div>
-                        <TableComponent/>
+                        <InvoiceTableComponent shipment={shipmentData}/>
                     </div>
                 </div>
                 <div className="col-span-1">

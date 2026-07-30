@@ -1,15 +1,13 @@
 import BarChartComponent from "@/components/chart/BarChartComponent";
 import PieChartComponent from "@/components/chart/PieChartComponent";
 import StackChartComponent from "@/components/chart/StackChartComponent";
-import TableComponent from "@/components/TableComponent";
-import { ApexOptions } from "apexcharts";
+import DashboardTableComponent from "@/components/DashboardTableComponent";
 import Link from "next/link";
-import ReactApexChart from "react-apexcharts";
-
+import shipmentData from "@/data/shipment/seed"
+import Image from "next/image";
+import map from "@/public/images/Map-section.png"
 const DashboardPage = () => {
-
-const series = [{ name: 'Sales', data: [44, 55, 41] }]
-
+    const sliceData = shipmentData.slice(0, 5);
     return (
         <section>
             <div className="flex justify-between items-center mb-5">
@@ -78,37 +76,125 @@ const series = [{ name: 'Sales', data: [44, 55, 41] }]
                             </div>
                         </div>
                         <div className="col-span-1">
-                            <div className="db-card h-full">
-                                <h6 className="text-base font-semibold mb-3">Warehouse Activity Log</h6>
-                                <BarChartComponent />
+                            <div className="db-card">
+                                <Image className="w-full max-h-[423px] object-fill" src={map} alt="profit-summary" width={299} height={473}/>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="col-span-1">
                     <div className="db-card h-full">
-                        <h6 className="text-base font-semibold mb-3">Warehouse Activity Log</h6>
-                        <PieChartComponent series={[44, 55, 41]} categories={['Team A', 'Team B', 'Team C']}/>
+                        <div className="flex justify-between items-center mb-4">
+                            <h6 className="text-base font-semibold">Shipment Alerts</h6>
+                            <button className="text-paragraph bg-[#F0F0F0] w-7 h-7 rounded-lg flex items-center justify-center text-base">
+                                <i className="icon-more"></i>
+                            </button>
+                        </div>
+                        <div className="mb-6">
+                            <h6 className="text-2xl font-bold flex items-end gap-1 mb-5">12 <span className="text-sm text-paragraph font-normal">Delays Detected</span></h6>
+                            <div className="flex gap-2">
+                                <div className="bg-[#E3DDFF] px-2 pt-4 pb-3 rounded-lg w-fit text-center">
+                                    <h6 className="text-2xl font-bold mb-2">5</h6>
+                                    <p className="text-sm font-normal">Customs Clearance Delay</p>
+                                </div>
+                                <div className="bg-[#E3DDFF] px-2 pt-4 pb-3 rounded-lg w-fit text-center">
+                                    <h6 className="text-2xl font-bold mb-2">4</h6>
+                                    <p className="text-sm font-normal">Incorrect Address Provided</p>
+                                </div>
+                                <div className="bg-[#E3DDFF] px-2 pt-4 pb-3 rounded-lg w-fit text-center">
+                                    <h6 className="text-2xl font-bold mb-2">3</h6>
+                                    <p className="text-sm font-normal">Weather-Related Hold</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex flex-col gap-4">
+                            <div className="flex justify-between">
+                                <div className="flex gap-3 items-center flex-1">
+                                    <div className="w-[34px] h-[34px] bg-[#F0F0F0] rounded-lg flex items-center justify-center text-lg">
+                                        <i className="icon-filex"></i>
+                                    </div>
+                                    <div>
+                                        <p className="text-xs font-semibold mb-0.5">Customs Clearance Delay</p>
+                                        <p className="text-xs font-normal text-paragraph">12 Shipment</p>
+                                    </div>
+                                </div>
+                                <Link href={"#"} className="text-base text-paragraph">
+                                    <i className="icon-arrowupright"></i>
+                                </Link>
+                            </div>
+                            <div className="flex justify-between">
+                                <div className="flex gap-3 items-center flex-1">
+                                    <div className="w-[34px] h-[34px] bg-[#F0F0F0] rounded-lg flex items-center justify-center text-lg">
+                                        <i className="icon-filex"></i>
+                                    </div>
+                                    <div>
+                                        <p className="text-xs font-semibold mb-0.5">Customs Clearance Delay</p>
+                                        <p className="text-xs font-normal text-paragraph">12 Shipment</p>
+                                    </div>
+                                </div>
+                                <Link href={"#"} className="text-base text-paragraph">
+                                    <i className="icon-arrowupright"></i>
+                                </Link>
+                            </div>
+                            <div className="flex justify-between">
+                                <div className="flex gap-3 items-center flex-1">
+                                    <div className="w-[34px] h-[34px] bg-[#F0F0F0] rounded-lg flex items-center justify-center text-lg">
+                                        <i className="icon-filex"></i>
+                                    </div>
+                                    <div>
+                                        <p className="text-xs font-semibold mb-0.5">Customs Clearance Delay</p>
+                                        <p className="text-xs font-normal text-paragraph">12 Shipment</p>
+                                    </div>
+                                </div>
+                                <Link href={"#"} className="text-base text-paragraph">
+                                    <i className="icon-arrowupright"></i>
+                                </Link>
+                            </div>
+                            <div className="flex justify-between">
+                                <div className="flex gap-3 items-center flex-1">
+                                    <div className="w-[34px] h-[34px] bg-[#F0F0F0] rounded-lg flex items-center justify-center text-lg">
+                                        <i className="icon-filex"></i>
+                                    </div>
+                                    <div>
+                                        <p className="text-xs font-semibold mb-0.5">Customs Clearance Delay</p>
+                                        <p className="text-xs font-normal text-paragraph">12 Shipment</p>
+                                    </div>
+                                </div>
+                                <Link href={"#"} className="text-base text-paragraph">
+                                    <i className="icon-arrowupright"></i>
+                                </Link>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[858fr_299fr] gap-5">
                 <div className="col-span-1">
                     <div className="db-card">
-                        <TableComponent/>
+                        <div className="flex justify-between items-center mb-5">
+                            <h6 className="text-base font-bold">Recent Activity</h6>
+                            <button className="text-paragraph bg-[#F0F0F0] w-7 h-7 rounded-lg flex items-center justify-center text-base">
+                                <i className="icon-more"></i>
+                            </button>
+                        </div>
+                        <DashboardTableComponent shipmentData={sliceData}/>
                     </div>
                 </div>
                 <div className="col-span-1">
                     <div className="db-card h-full">
                         <div className="flex justify-between items-center mb-5">
                             <h6 className="text-base font-bold">Recent Activity</h6>
-                            <button>View all</button>
+                            <button className="text-paragraph bg-[#F0F0F0] w-7 h-7 rounded-lg flex items-center justify-center text-base">
+                                <i className="icon-more"></i>
+                            </button>
                         </div>
                         <div className="flex w-full flex-col items-start">
                             <div className="group flex gap-x-4 w-full">
                                 <div className="relative">
                                     <div className="absolute left-1/2 top-0 h-full w-0.5 -translate-x-1/2 bg-[#E0E0E0]"></div>
-                                    <span className="relative z-10 grid h-9 w-9 place-items-center rounded-full bg-[#E3DDFF] text-primary"></span>
+                                    <span className="relative z-10 grid h-9 w-9 place-items-center rounded-full bg-[#E3DDFF]">
+                                        <i className="icon-copy text-lg"></i>
+                                    </span>
                                 </div>
                                 <div className="pb-5 w-full">
                                     <div className="flex flex-col justify-between items-start">
@@ -120,7 +206,9 @@ const series = [{ name: 'Sales', data: [44, 55, 41] }]
                             <div className="group flex gap-x-4 w-full">
                                 <div className="relative">
                                     <div className="absolute left-1/2 top-0 h-full w-0.5 -translate-x-1/2 bg-[#E0E0E0]"></div>
-                                    <span className="relative z-10 grid h-9 w-9 place-items-center rounded-full bg-[#E3DDFF] text-primary"></span>
+                                    <span className="relative z-10 grid h-9 w-9 place-items-center rounded-full bg-[#E0E0E0]">
+                                        <i className="icon-tag text-lg"></i>
+                                    </span>
                                 </div>
                                 <div className="pb-5 w-full">
                                     <div className="flex flex-col justify-between items-start">
@@ -132,7 +220,9 @@ const series = [{ name: 'Sales', data: [44, 55, 41] }]
                             <div className="group flex gap-x-4 w-full">
                                 <div className="relative">
                                     <div className="absolute left-1/2 top-0 h-full w-0.5 -translate-x-1/2 bg-[#E0E0E0]"></div>
-                                    <span className="relative z-10 grid h-9 w-9 place-items-center rounded-full bg-[#E3DDFF] text-primary"></span>
+                                    <span className="relative z-10 grid h-9 w-9 place-items-center rounded-full bg-[#E3DDFF]">
+                                        <i className="icon-refresh text-lg"></i>
+                                    </span>
                                 </div>
                                 <div className="pb-5 w-full">
                                     <div className="flex flex-col justify-between items-start">
@@ -143,7 +233,9 @@ const series = [{ name: 'Sales', data: [44, 55, 41] }]
                             </div>
                             <div className="group flex gap-x-4 w-full">
                                 <div className="relative">
-                                    <span className="relative z-10 grid h-9 w-9 place-items-center rounded-full bg-[#E3DDFF] text-primary"></span>
+                                    <span className="relative z-10 grid h-9 w-9 place-items-center rounded-full bg-[#E0E0E0]">
+                                        <i className="icon-checkcircle text-lg"></i>
+                                    </span>
                                 </div>
                                 <div className="pb-5 w-full">
                                     <div className="flex flex-col justify-between items-start">

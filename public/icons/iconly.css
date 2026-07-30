@@ -7,8 +7,8 @@
   font-family: "Iconly";
   font-style: normal;
   font-weight: 400;
-  src: url("./iconly.eot?1785395218324");
-  src: url("./iconly.eot?#iefix") format("embedded-opentype"), url("./iconly.woff2?1785395218324") format("woff2"), url("./iconly.woff?1785395218324") format("woff"), url("./iconly.ttf?1785395218324") format("truetype"), url("./iconly.svg?1785395218324#Iconly") format("svg");
+  src: url("./iconly.eot?1785403939952");
+  src: url("./iconly.eot?#iefix") format("embedded-opentype"), url("./iconly.woff2?1785403939952") format("woff2"), url("./iconly.woff?1785403939952") format("woff"), url("./iconly.ttf?1785403939952") format("truetype"), url("./iconly.svg?1785403939952#Iconly") format("svg");
 }
 
 [class="icon"], [class^="icon-"], [class*=" icon-"] {
@@ -137,4 +137,40 @@
 
 .icon-funnel:before {
   content: "\e01c";
+}
+
+.icon-more:before {
+  content: "\e01d";
+}
+
+.icon-copy:before {
+  content: "\e01e";
+}
+
+.icon-tag:before {
+  content: "\e01f";
+}
+
+.icon-refresh:before {
+  content: "\e020";
+}
+
+.icon-checkcircle:before {
+  content: "\e021";
+}
+
+.icon-sort-asc:before {
+  content: "\e022";
+}
+
+.icon-dollar:before {
+  content: "\e023";
+}
+
+.icon-cloudlightning:before {
+  content: "\e024";
+}
+
+.icon-mappinx:before {
+  content: "\e025";
 }
