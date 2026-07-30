@@ -2,8 +2,11 @@ import { Shipment } from "@/types";
 
 const shipmentData: Shipment[] = [
     {
+        invoice_id: "INV-2026-1001",
         shipping_id: "#SH9281001",
         id: "TRK-88213-XJ",
+        amount: 1240.5,
+        weight: 320.5,
         status: "in transit",
         company: { logo: "/images/shipment/techgear.png", name: "TechGear Inc.", company_type: "Electronics" },
         destination: {
@@ -14,8 +17,11 @@ const shipmentData: Shipment[] = [
         },
     },
     {
+        invoice_id: "INV-2026-1002",
         shipping_id: "#SH9281002",
         id: "TRK-77104-KL",
+        amount: 860.0,
+        weight: 45.0,
         status: "delivered",
         company: { logo: "/images/shipment/stylehub.png", name: "StyleHub Co.", company_type: "Apparel" },
         destination: {
@@ -26,8 +32,11 @@ const shipmentData: Shipment[] = [
         },
     },
     {
+        invoice_id: "INV-2026-1003",
         shipping_id: "#SH9281003",
         id: "TRK-65590-MN",
+        amount: 5320.75,
+        weight: 1250.0,
         status: "out for delivery",
         company: { logo: "/images/shipment/techgear.png", name: "Vertex Supply Chain", company_type: "Manufacturer" },
         destination: {
@@ -38,8 +47,11 @@ const shipmentData: Shipment[] = [
         },
     },
     {
+        invoice_id: "INV-2026-1004",
         shipping_id: "#SH9281004",
         id: "TRK-90341-QR",
+        amount: 2199.99,
+        weight: 780.25,
         status: "processing",
         company: { logo: "/images/shipment/techgear.png", name: "Apex Trade Partners", company_type: "Import/Export Agency" },
         destination: {
@@ -50,8 +62,11 @@ const shipmentData: Shipment[] = [
         },
     },
     {
+        invoice_id: "INV-2026-1005",
         shipping_id: "#SH9281005",
         id: "TRK-51278-ZT",
+        amount: 940.2,
+        weight: 96.4,
         status: "delivered",
         company: { logo: "/images/shipment/techgear.png", name: "Meridian & Co.", company_type: "Wholesale Supplier" },
         destination: {
@@ -62,8 +77,11 @@ const shipmentData: Shipment[] = [
         },
     },
     {
+        invoice_id: "INV-2026-1006",
         shipping_id: "#SH9281006",
         id: "TRK-33481-BC",
+        amount: 3410.0,
+        weight: 610.0,
         status: "in transit",
         company: { logo: "/images/shipment/techgear.png", name: "BlueWave Exports", company_type: "Export Agency" },
         destination: {
@@ -74,8 +92,11 @@ const shipmentData: Shipment[] = [
         },
     },
     {
+        invoice_id: "INV-2026-1007",
         shipping_id: "#SH9281007",
         id: "TRK-40219-DP",
+        amount: 1785.4,
+        weight: 540.75,
         status: "delivered",
         company: { logo: "/images/shipment/techgear.png", name: "Harvest Foods Ltd.", company_type: "FMCG Manufacturer" },
         destination: {
@@ -86,8 +107,11 @@ const shipmentData: Shipment[] = [
         },
     },
     {
+        invoice_id: "INV-2026-1008",
         shipping_id: "#SH9281008",
         id: "TRK-28857-EF",
+        amount: 8720.0,
+        weight: 3200.0,
         status: "processing",
         company: { logo: "/images/shipment/techgear.png", name: "SteelForge Industries", company_type: "Heavy Manufacturer" },
         destination: {
@@ -98,8 +122,11 @@ const shipmentData: Shipment[] = [
         },
     },
     {
+        invoice_id: "INV-2026-1009",
         shipping_id: "#SH9281009",
         id: "TRK-19204-GH",
+        amount: 2650.6,
+        weight: 890.6,
         status: "processing",
         company: { logo: "/images/shipment/techgear.png", name: "TextileCraft Mills", company_type: "Textile Manufacturer" },
         destination: {
@@ -110,8 +137,11 @@ const shipmentData: Shipment[] = [
         },
     },
     {
+        invoice_id: "INV-2026-1010",
         shipping_id: "#SH9281010",
         id: "TRK-70562-IJ",
+        amount: 1120.9,
+        weight: 125.3,
         status: "in transit",
         company: { logo: "/images/shipment/techgear.png", name: "PharmaPlus Ltd.", company_type: "Pharmaceutical" },
         destination: {
@@ -122,8 +152,11 @@ const shipmentData: Shipment[] = [
         },
     },
     {
+        invoice_id: "INV-2026-1011",
         shipping_id: "#SH9281011",
         id: "TRK-84420-KM",
+        amount: 4300.0,
+        weight: 2100.0,
         status: "processing",
         company: { logo: "/images/shipment/techgear.png", name: "Greenfield Agro", company_type: "Agriculture Exporter" },
         destination: {
@@ -134,8 +167,11 @@ const shipmentData: Shipment[] = [
         },
     },
     {
+        invoice_id: "INV-2026-1012",
         shipping_id: "#SH9281012",
         id: "TRK-56791-NO",
+        amount: 990.15,
+        weight: 60.0,
         status: "delivered",
         company: { logo: "/images/shipment/techgear.png", name: "Oceanic Trade Co.", company_type: "Import/Export Agency" },
         destination: {
@@ -146,8 +182,11 @@ const shipmentData: Shipment[] = [
         },
     },
     {
+        invoice_id: "INV-2026-1013",
         shipping_id: "#SH9281013",
         id: "TRK-63125-PQ",
+        amount: 6780.3,
+        weight: 1580.4,
         status: "in transit",
         company: { logo: "/images/shipment/techgear.png", name: "Summit Electronics", company_type: "Electronics Manufacturer" },
         destination: {
@@ -158,8 +197,11 @@ const shipmentData: Shipment[] = [
         },
     },
     {
+        invoice_id: "INV-2026-1014",
         shipping_id: "#SH9281014",
         id: "TRK-29847-RS",
+        amount: 2145.0,
+        weight: 410.0,
         status: "delivered",
         company: { logo: "/images/shipment/techgear.png", name: "Coastal Fisheries Ltd.", company_type: "Seafood Exporter" },
         destination: {
@@ -170,8 +212,11 @@ const shipmentData: Shipment[] = [
         },
     },
     {
+        invoice_id: "INV-2026-1015",
         shipping_id: "#SH9281015",
         id: "TRK-38102-TU",
+        amount: 3020.4,
+        weight: 970.2,
         status: "out for delivery",
         company: { logo: "/images/shipment/techgear.png", name: "Urban Furnish Co.", company_type: "Furniture Manufacturer" },
         destination: {
@@ -182,8 +227,11 @@ const shipmentData: Shipment[] = [
         },
     },
     {
+        invoice_id: "INV-2026-1016",
         shipping_id: "#SH9281016",
         id: "TRK-91456-VW",
+        amount: 1560.8,
+        weight: 300.9,
         status: "delivered",
         company: { logo: "/images/shipment/techgear.png", name: "Prime Plastics Ltd.", company_type: "Plastics Manufacturer" },
         destination: {
@@ -194,8 +242,11 @@ const shipmentData: Shipment[] = [
         },
     },
     {
+        invoice_id: "INV-2026-1017",
         shipping_id: "#SH9281017",
         id: "TRK-47289-XY",
+        amount: 4980.25,
+        weight: 850.0,
         status: "in transit",
         company: { logo: "/images/shipment/techgear.png", name: "Lumina Tech Solutions", company_type: "Electronics Distributor" },
         destination: {
@@ -206,8 +257,11 @@ const shipmentData: Shipment[] = [
         },
     },
     {
+        invoice_id: "INV-2026-1018",
         shipping_id: "#SH9281018",
         id: "TRK-58374-ZA",
+        amount: 875.5,
+        weight: 55.5,
         status: "processing",
         company: { logo: "/images/shipment/techgear.png", name: "Craft Leather Works", company_type: "Leather Goods Manufacturer" },
         destination: {
@@ -218,8 +272,11 @@ const shipmentData: Shipment[] = [
         },
     },
     {
+        invoice_id: "INV-2026-1019",
         shipping_id: "#SH9281019",
         id: "TRK-62918-BD",
+        amount: 1990.0,
+        weight: 720.3,
         status: "processing",
         company: { logo: "/images/shipment/techgear.png", name: "Nova Paper Mills", company_type: "Paper Manufacturer" },
         destination: {
@@ -230,8 +287,11 @@ const shipmentData: Shipment[] = [
         },
     },
     {
+        invoice_id: "INV-2026-1020",
         shipping_id: "#SH9281020",
         id: "TRK-73605-CE",
+        amount: 630.75,
+        weight: 210.0,
         status: "delivered",
         company: { logo: "/images/shipment/techgear.png", name: "AquaPure Beverages", company_type: "Beverage Manufacturer" },
         destination: {
@@ -242,8 +302,11 @@ const shipmentData: Shipment[] = [
         },
     },
     {
+        invoice_id: "INV-2026-1021",
         shipping_id: "#SH9281021",
         id: "TRK-84730-FG",
+        amount: 2870.6,
+        weight: 460.8,
         status: "in transit",
         company: { logo: "/images/shipment/techgear.png", name: "Golden Spice Traders", company_type: "Food Exporter" },
         destination: {
@@ -254,8 +317,11 @@ const shipmentData: Shipment[] = [
         },
     },
     {
+        invoice_id: "INV-2026-1022",
         shipping_id: "#SH9281022",
         id: "TRK-95216-HI",
+        amount: 9450.0,
+        weight: 4200.0,
         status: "delivered",
         company: { logo: "/images/shipment/techgear.png", name: "IronPeak Steelworks", company_type: "Steel Manufacturer" },
         destination: {
@@ -266,8 +332,11 @@ const shipmentData: Shipment[] = [
         },
     },
     {
+        invoice_id: "INV-2026-1023",
         shipping_id: "#SH9281023",
         id: "TRK-16483-JK",
+        amount: 1345.2,
+        weight: 88.0,
         status: "in transit",
         company: { logo: "/images/shipment/techgear.png", name: "Velvet Cosmetics", company_type: "Cosmetics Manufacturer" },
         destination: {
@@ -278,8 +347,11 @@ const shipmentData: Shipment[] = [
         },
     },
     {
+        invoice_id: "INV-2026-1024",
         shipping_id: "#SH9281024",
         id: "TRK-27590-LM",
+        amount: 3760.9,
+        weight: 1340.6,
         status: "delivered",
         company: { logo: "/images/shipment/techgear.png", name: "Bright Auto Parts", company_type: "Automotive Manufacturer" },
         destination: {
@@ -290,8 +362,11 @@ const shipmentData: Shipment[] = [
         },
     },
     {
+        invoice_id: "INV-2026-1025",
         shipping_id: "#SH9281025",
         id: "TRK-38904-NP",
+        amount: 2210.0,
+        weight: 990.0,
         status: "in transit",
         company: { logo: "/images/shipment/techgear.png", name: "Crystal Glassworks", company_type: "Glass Manufacturer" },
         destination: {
@@ -302,8 +377,11 @@ const shipmentData: Shipment[] = [
         },
     },
     {
+        invoice_id: "INV-2026-1026",
         shipping_id: "#SH9281026",
         id: "TRK-49317-QS",
+        amount: 1085.4,
+        weight: 65.4,
         status: "delivered",
         company: { logo: "/images/shipment/techgear.png", name: "Moonlight Dairy", company_type: "Dairy Producer" },
         destination: {
@@ -314,8 +392,11 @@ const shipmentData: Shipment[] = [
         },
     },
     {
+        invoice_id: "INV-2026-1027",
         shipping_id: "#SH9281027",
         id: "TRK-50628-RT",
+        amount: 2999.99,
+        weight: 1120.0,
         status: "delivered",
         company: { logo: "/images/shipment/techgear.png", name: "Skyline Paints Ltd.", company_type: "Paint Manufacturer" },
         destination: {
@@ -326,8 +407,11 @@ const shipmentData: Shipment[] = [
         },
     },
     {
+        invoice_id: "INV-2026-1028",
         shipping_id: "#SH9281028",
         id: "TRK-61735-SU",
+        amount: 7650.0,
+        weight: 30.2,
         status: "processing",
         company: { logo: "/images/shipment/techgear.png", name: "Starlit Jewels", company_type: "Jewelry Manufacturer" },
         destination: {
@@ -338,8 +422,11 @@ const shipmentData: Shipment[] = [
         },
     },
     {
+        invoice_id: "INV-2026-1029",
         shipping_id: "#SH9281029",
         id: "TRK-72840-TV",
+        amount: 1420.6,
+        weight: 675.0,
         status: "out for delivery",
         company: { logo: "/images/shipment/techgear.png", name: "Riverstone Ceramics", company_type: "Ceramics Manufacturer" },
         destination: {
@@ -350,8 +437,11 @@ const shipmentData: Shipment[] = [
         },
     },
     {
+        invoice_id: "INV-2026-1030",
         shipping_id: "#SH9281030",
         id: "TRK-83951-UW",
+        amount: 3345.15,
+        weight: 2050.9,
         status: "in transit",
         company: { logo: "/images/shipment/techgear.png", name: "Horizon Packaging Co.", company_type: "Packaging Manufacturer" },
         destination: {
@@ -363,4 +453,4 @@ const shipmentData: Shipment[] = [
     },
 ];
 
-export default shipmentData
+export default shipmentData;

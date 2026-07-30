@@ -10,7 +10,7 @@ const DashboardLayout = ({children}: {children: React.ReactNode}) => {
         <div className="h-dvh md:pl-16 lg:pl-55.75 max-sm:pt-16 transition-all duration-300">
             <DashboardHeader onMenuClick={() => setIsSidebarOpen(true)}/>
             <DashboardSidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)}/>
-            <div className="p-5 bg-[#F0F0F0]">{children}</div> 
+            <div className="p-4 sm:p-5 bg-[#F0F0F0]">{children}</div> 
             <DashboardFooter/>
         </div>
     )

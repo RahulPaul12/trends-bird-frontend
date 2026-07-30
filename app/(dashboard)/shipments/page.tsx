@@ -18,8 +18,8 @@ const ShipmentsPage = () => {
     };
     return (
         <section>
-            <div className="flex justify-between items-center mb-5 max-sm:hidden">
-                <div>
+            <div className="flex justify-between items-center mb-5">
+                <div className="max-sm:hidden">
                     <h2 className="text-2xl font-bold">Shipments</h2>
                     <div className="db-breadcrumb">
                         <ul className="db-breadcrumb-list">
@@ -38,7 +38,7 @@ const ShipmentsPage = () => {
                 </div>
             </div>
             {view === "grid" ?
-            (<ShipmentGridView shipment={shipment}/>) : ( <ShipmentTableView/>)
+            (<ShipmentGridView shipment={shipment}/>) : ( <ShipmentTableView shipment= {shipment}/>)
              }
         </section>
     );

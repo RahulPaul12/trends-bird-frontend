@@ -9,7 +9,7 @@ const ShipmentGridView = ({shipment}:ShipmentGridViewProps) => {
     return (
         <>
             <div className="flex max-sm:flex-col gap-4 justify-between items-center mb-4 max-sm:w-full">
-                    <div className="flex gap-2 bg-white rounded-lg max-sm:w-full">
+                    <div className="flex gap-2 bg-white rounded-lg max-sm:w-full overflow-auto">
                         <button className={`rounded-lg px-5 py-2.25 text-xs font-semibold text-white bg-black`}>All</button>
                         <button className={`rounded-lg px-5 py-2.25 text-xs font-semibold text-paragraph bg-white`}>Completed</button>
                         <button className={`rounded-lg px-5 py-2.25 text-xs font-semibold text-paragraph bg-white`}>Delivery</button>

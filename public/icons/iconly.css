@@ -7,8 +7,8 @@
   font-family: "Iconly";
   font-style: normal;
   font-weight: 400;
-  src: url("./iconly.eot?1785303567633");
-  src: url("./iconly.eot?#iefix") format("embedded-opentype"), url("./iconly.woff2?1785303567633") format("woff2"), url("./iconly.woff?1785303567633") format("woff"), url("./iconly.ttf?1785303567633") format("truetype"), url("./iconly.svg?1785303567633#Iconly") format("svg");
+  src: url("./iconly.eot?1785395218324");
+  src: url("./iconly.eot?#iefix") format("embedded-opentype"), url("./iconly.woff2?1785395218324") format("woff2"), url("./iconly.woff?1785395218324") format("woff"), url("./iconly.ttf?1785395218324") format("truetype"), url("./iconly.svg?1785395218324#Iconly") format("svg");
 }
 
 [class="icon"], [class^="icon-"], [class*=" icon-"] {
@@ -125,4 +125,16 @@
 
 .icon-gearsix:before {
   content: "\e019";
+}
+
+.icon-countdown:before {
+  content: "\e01a";
+}
+
+.icon-checksquare:before {
+  content: "\e01b";
+}
+
+.icon-funnel:before {
+  content: "\e01c";
 }

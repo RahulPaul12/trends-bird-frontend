@@ -9,7 +9,7 @@ const WareHouse = () =>{
     }
     return (
         <section>
-            <div className="flex justify-between items-center mb-5">
+            <div className="flex justify-between items-center mb-5 max-sm:hidden">
                 <div>
                     <h2 className="text-2xl font-bold">WareHouse</h2>
                     <div className="db-breadcrumb">
@@ -18,6 +18,12 @@ const WareHouse = () =>{
                             <li className="db-breadcrumb-item">Warehouse</li>
                         </ul>
                     </div>
+                </div>
+                <div className="flex gap-2 bg-white rounded-lg max-sm:w-full">
+                    <button className={`rounded-lg px-5 py-2.25 text-xs font-semibold text-white bg-black`}>All</button>
+                    <button className={`rounded-lg px-5 py-2.25 text-xs font-semibold text-paragraph bg-white`}>Completed</button>
+                    <button className={`rounded-lg px-5 py-2.25 text-xs font-semibold text-paragraph bg-white`}>Delivery</button>
+                    <button className={`rounded-lg px-5 py-2.25 text-xs font-semibold text-paragraph bg-white`}>Delivered</button>
                 </div>
             </div>
             <div className="grid grid-cols-2 lg:grid-cols-10 gap-5 mb-5">

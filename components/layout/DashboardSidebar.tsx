@@ -70,7 +70,7 @@ const DashboardSidebar = ({ isOpen, onClose }: { isOpen: boolean; onClose: () =>
               <li className={`db-sidebar-nav-item }`}>
                 <Link href={"#"} className="db-sidebar-nav-menu relative">
                   <i className={`icon-chatdots shrink-0`} aria-hidden="true" />
-                  <span className="max-sm:hidden md:block lg:hidden w-2 h-2 rounded-full bg-primary absolute right-3 top-1/2 -translate-y-1/2"></span>
+                  <span className="max-sm:hidden md:block lg:hidden w-2 h-2 rounded-full bg-primary absolute right-3 top-3"></span>
                   <span className="text-sm font-semibold flex-auto flex-nowrap items-center justify-between gap-2 max-sm:block md:hidden lg:flex">
                     Message
                     <p className="block w-fit h-5 leading-5 px-1.5 text-white text-xs bg-primary rounded-lg">19</p>
@@ -80,7 +80,7 @@ const DashboardSidebar = ({ isOpen, onClose }: { isOpen: boolean; onClose: () =>
               <li className={`db-sidebar-nav-item }`}>
                 <Link href={"#"} className="db-sidebar-nav-menu relative">
                   <i className={`icon-notification shrink-0`} aria-hidden="true" />
-                  <span className="max-sm:hidden md:block lg:hidden w-2 h-2 rounded-full bg-primary absolute right-3 top-1/2 -translate-y-1/2"></span>
+                  <span className="max-sm:hidden md:block lg:hidden w-2 h-2 rounded-full bg-primary absolute right-3 top-3"></span>
                   <span className="text-sm font-semibold flex-auto flex-nowrap items-center justify-between gap-2 max-sm:block md:hidden lg:flex">
                     Notifications
                     <p className="block w-fit h-5 leading-5 px-1.5 text-white text-xs bg-primary rounded-lg">19</p>

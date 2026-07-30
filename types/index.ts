@@ -27,8 +27,11 @@ export type DestinationInfo = {
 }
 
 export type Shipment = {
+    invoice_id: string,
     id: string;
     shipping_id: string;
+    amount:number,
+    weight:number
     status: ShipmentStatus;
     company: CompanyInfo;
     destination: DestinationInfo;
