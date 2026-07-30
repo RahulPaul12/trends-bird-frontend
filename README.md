@@ -1,5 +1,7 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+live : https://6a6b57848bd8f2dbb2753061--shipnow-trend.netlify.app/
+
 ## Getting Started
 
 First, run the development server:
